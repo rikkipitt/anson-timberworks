@@ -11,4 +11,5 @@
 // about supported directives.
 //
 //= require jquery
+//= require fullpage.js/dist/fullpage
 //= require_tree .
