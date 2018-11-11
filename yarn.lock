@@ -2,6 +2,12 @@
 # yarn lockfile v1
 
 
+fullpage.js@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/fullpage.js/-/fullpage.js-3.0.3.tgz#d52b7960eab96fc3e8aeed3282392df031ed6c89"
+  dependencies:
+    jquery "^3.3.1"
+
 jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
