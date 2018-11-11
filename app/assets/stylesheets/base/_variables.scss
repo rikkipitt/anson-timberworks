@@ -1,3 +1,21 @@
+// Breakpoints
+$medium-screen: 600px;
+$large-screen: 900px;
+$grid-max-width: 1200px;
+
+// Grid
+$medium-grid: (
+  columns: 12,
+  gutter: 20px,
+  media: $medium-screen
+);
+
+$large-grid: (
+  columns: 12,
+  gutter: 20px,
+  media: $large-screen
+);
+
 // Typography
 $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;
@@ -16,11 +34,14 @@ $base-z-index: 0;
 $blue: #1565c0;
 $dark-gray: #333;
 $medium-gray: #999;
-$light-gray: #ddd;
+$light-gray: #a4a4a4;
+$loulou: #41183e;
+$mobster: #896f87;
+$fringy-flower: #b5dcc2;
 
 // Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+$base-font-color: $light-gray;
+$action-color: $loulou;
 
 // Border
 $base-border-color: $light-gray;
