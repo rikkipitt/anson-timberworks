@@ -1,0 +1,11 @@
+.wrap {
+  @include grid-container;
+  max-width: $grid-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+section {
+  position: relative;
+}

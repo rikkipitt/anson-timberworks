@@ -1,7 +1,7 @@
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
     <a href="javascript:void(0)" class="mobile-logo">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image">
+      <%= image_tag "menu-logo.svg" %>
     </a>
     <a href="javascript:void(0)" id="js-navigation-mobile-menu" class="navigation-mobile-menu">MENU</a>
     <nav role="navigation">
@@ -13,5 +13,9 @@
         <li class="nav-link"><a href="javascript:void(0)">Contact</a></li>
       </ul>
     </nav>
+  </div>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progress"></div>
   </div>
 </header>

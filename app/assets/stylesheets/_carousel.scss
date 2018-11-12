@@ -1,0 +1,56 @@
+.carousel {
+  @include grid-container;
+  position: relative;
+
+  &::after {
+    background-image: image-url("logo.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.carousel__hero {
+  width: 100%;
+}
+
+.carousel__slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 150px);
+  width: 100%;
+}
+
+#carousel {
+  margin-bottom: 0;
+
+  .slick-dots {
+    bottom: -30px;
+
+    li {
+      margin: 0;
+    }
+  }
+
+  .slick-dots li button:hover {
+    background-color: transparent;
+  }
+
+  .slick-dots li button:before {
+    font-size: 8px;
+    opacity: 1;
+    color: #ccc;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #666;
+  }
+}

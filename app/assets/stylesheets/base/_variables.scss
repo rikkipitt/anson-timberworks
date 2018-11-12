@@ -5,20 +5,47 @@ $grid-max-width: 1200px;
 
 // Grid
 $medium-grid: (
-  columns: 12,
-  gutter: 20px,
-  media: $medium-screen
+columns: 12,
+gutter: 20px,
+media: $medium-screen
 );
 
 $large-grid: (
-  columns: 12,
-  gutter: 20px,
-  media: $large-screen
+columns: 12,
+gutter: 20px,
+media: $large-screen
 );
 
+@font-face {
+  font-family: 'Avenir';
+  src: font-url('Avenir-Light.eot');
+  src: font-url('Avenir-Light.eot?#iefix') format('embedded-opentype'),
+  font-url('Avenir-Light.woff2') format('woff2'),
+  font-url('Avenir-Light.woff') format('woff'),
+  font-url('Avenir-Light.ttf') format('truetype'),
+  font-url('Avenir-Light.svg#Avenir-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: font-url('Avenir-Book.eot');
+  src: font-url('Avenir-Book.eot?#iefix') format('embedded-opentype'),
+  font-url('Avenir-Book.woff2') format('woff2'),
+  font-url('Avenir-Book.woff') format('woff'),
+  font-url('Avenir-Book.ttf') format('truetype'),
+  font-url('Avenir-Book.svg#Avenir-Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-stack-avenir: ("Avenir", sans-serif);
+$font-stack-avenir-book: ("Avenir Book", sans-serif);
+
 // Typography
-$base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
+$base-font-family: $font-stack-avenir;
+$heading-font-family: $font-stack-avenir-book;
 
 // Line height
 $base-line-height: 1.5;

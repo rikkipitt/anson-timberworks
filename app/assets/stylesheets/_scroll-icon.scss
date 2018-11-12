@@ -1,0 +1,9 @@
+.scroll-icon {
+  @include grid-container;
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}

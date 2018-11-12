@@ -4,7 +4,7 @@
   $navigation-background: $loulou;
   $navigation-color: $mobster;
   $navigation-color-hover: $fringy-flower;
-  $navigation-height: 79px;
+  $navigation-height: 60px;
   $navigation-item-padding: 1em;
   $navigation-submenu-padding: 1em;
   $navigation-submenu-width: 12em;
@@ -22,13 +22,12 @@
   .mobile-logo {
     display: inline;
     float: left;
-    max-height: $navigation-height;
+    line-height: $navigation-height;
     padding-left: $navigation-padding;
 
     img {
-      max-height: $navigation-height;
-      opacity: 0.6;
-      padding: 0.8em 0;
+      height: 20px;
+      vertical-align: middle;
     }
 
     @include grid-media($horizontal-bar-mode) {
@@ -92,7 +91,8 @@
     background: $navigation-background;
     display: block;
     font-size: 0.875em;
-    line-height: $navigation-height;
+    letter-spacing: 0.325em;
+    line-height: $navigation-height / 1.2;
     overflow: hidden;
     padding: 0 $navigation-submenu-padding;
     text-align: right;
