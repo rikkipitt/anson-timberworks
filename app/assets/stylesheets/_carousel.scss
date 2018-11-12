@@ -4,8 +4,9 @@
 
   &::after {
     background-image: image-url("logo.svg");
-    background-repeat: no-repeat;
     background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 80%;
     content: "";
     display: block;
     position: absolute;
@@ -13,6 +14,10 @@
     left: 0;
     right: 0;
     bottom: 0;
+
+    @include grid-media($large-grid) {
+      background-size: 50%;
+    }
   }
 }
 
