@@ -1,0 +1,37 @@
+.instagram {
+  @include grid-column(12);
+
+  @include grid-media($medium-grid) {
+    @include grid-column(8);
+    @include grid-push(2);
+  }
+}
+
+.instagram__posts {
+  @include grid-container;
+  @include grid-collapse;
+}
+
+.instagram__post {
+  @include grid-column(6);
+  @include aspect-ratio(1, 1);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  list-style-type: none;
+  margin-bottom: 20px;
+  position: relative;
+
+  @include grid-media($medium-grid) {
+    @include grid-column(4);
+  }
+}
+
+.instagram__link {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

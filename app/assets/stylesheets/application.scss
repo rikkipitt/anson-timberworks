@@ -9,15 +9,12 @@
 @import "slick/slick";
 @import "slick/slick-theme";
 
+@import "mixins/aspect-ratio";
+
 @import "carousel";
+@import "instagram";
 @import "introduction";
 @import "layout";
 @import "navigation";
+@import "panel-header";
 @import "scroll-icon";
-
-.vertically-evenly-spaced {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-}

@@ -7,4 +7,5 @@ new fullpage("#main",
   scrollOverflow: true
   responsiveHeight: 500
   responsiveWidth: 600
+  anchors: ['hero', 'introduction', 'team', 'news']
 )

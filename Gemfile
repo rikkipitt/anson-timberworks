@@ -22,7 +22,6 @@ gem "title"
 gem "uglifier"
 gem "bootsnap", require: false
 
-
 group :development do
   gem "listen"
   gem "rack-mini-profiler", require: false
@@ -48,19 +47,19 @@ end
 
 gem "suspenders", group: [:development, :test]
 
-gem 'high_voltage'
-gem 'bourbon', '~> 5.0'
-gem 'neat', '~> 2.1'
-gem 'spring-commands-rspec', group: :development
-gem 'rspec-rails', '~> 3.6', group: [:development, :test]
-gem 'shoulda-matchers', group: :test
-gem 'capybara-selenium', group: :test
-gem 'chromedriver-helper', group: :test
-gem 'simple_form'
-gem 'bullet', group: [:development, :test]
-gem 'factory_bot_rails', group: [:development, :test]
-gem 'delayed_job_active_record'
-gem 'rack-timeout', group: :production
+gem "high_voltage"
+gem "bourbon", "~> 5.0"
+gem "neat", "~> 2.1"
+gem "spring-commands-rspec", group: :development
+gem "rspec-rails", "~> 3.6", group: [:development, :test]
+gem "shoulda-matchers", group: :test
+gem "capybara-selenium", group: :test
+gem "chromedriver-helper", group: :test
+gem "simple_form"
+gem "bullet", group: [:development, :test]
+gem "factory_bot_rails", group: [:development, :test]
+gem "delayed_job_active_record"
+gem "rack-timeout", group: :production
 # Custom dependencies
 
 gem "active_link_to"
@@ -70,6 +69,7 @@ gem "cancancan"
 gem "ckeditor"
 gem "devise"
 gem "friendly_id", "~> 5.2.0"
+gem "instagram"
 gem "paperclip"
 gem "paper_trail"
 gem "rails_admin"
