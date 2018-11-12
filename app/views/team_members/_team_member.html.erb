@@ -1,0 +1,8 @@
+<li class="team-member">
+  <%= image_tag team_member.image.url(:main), class: "team-member__image" %>
+  <%= content_tag :h3, team_member.name, class: "team-member__name" %>
+  <%= content_tag :h4, team_member.position, class: "team-member__position" %>
+  <div class="team-member__bio">
+    <%= simple_format team_member.intro %>
+  </div>
+</li>

@@ -1,0 +1,16 @@
+.social {
+  margin: 20px auto;
+}
+
+.social__item {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.social__icon {
+  height: 30px;
+
+  &:hover path {
+    fill: $fringy-flower;
+  }
+}

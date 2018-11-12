@@ -1,6 +1,11 @@
 .introduction {
   @include grid-column(12);
 
+  @include grid-media($medium-grid) {
+    @include grid-column(10);
+    @include grid-push(1);
+  }
+
   @include grid-media($large-grid) {
     @include grid-column(6);
     @include grid-push(3);

@@ -1,6 +1,7 @@
 <div id="main" class="main">
   <%= render "static/hero" %>
   <%= render "static/introduction" %>
-  <section class="section">C</section>
-  <%= render partial: "instagram", locals: { instagram_images: @home.instagram_images } %>
+  <%= render "static/team", team_members: @home.team_members %>
+  <%= render "instagram", instagram_images: @home.instagram_images %>
+  <%= render "static/contact" %>
 </div>

@@ -1,0 +1,51 @@
+.team {
+  @include grid-column(12);
+
+  @include grid-media($large-grid) {
+    @include grid-column(10);
+    @include grid-push(1);
+  }
+}
+
+.team-member__posts {
+  @include grid-container;
+  @include grid-collapse;
+}
+
+.team-member {
+  @include grid-column(12);
+  margin-bottom: 40px;
+  text-align: center;
+
+  @include grid-media($medium-grid) {
+    @include grid-column(3.5);
+    @include grid-push(0.5);
+    margin-bottom: 0;
+
+    &:first-child {
+      @include grid-push(0);
+    }
+  }
+}
+
+.team-member__image {
+  border-radius: 50%;
+  margin-bottom: 30px;
+  width: 140px;
+}
+
+.team-member__name {
+  color: #323232;
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.team-member__position {
+  color: #323232;
+  font-size: 1em;
+}
+
+.team-member__bio {
+  margin-top: 20px;
+  text-align: left;
+}

@@ -1,0 +1,21 @@
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer__copy {
+  color: rgba(255,255,255,0.2);
+  font-size: 0.9375em;
+}
+
+.footer__link {
+  color: rgba(255,255,255,0.2);
+
+  &:hover {
+    color: $fringy-flower;
+  }
+}

@@ -1,0 +1,35 @@
+<section class="section">
+  <div class="contact vertically-aligned">
+    <div class="contact__details">
+      <div class="contact__number">Office +44 1359 271 546</div>
+      <div class="contact__number">Mobile +44 7545 839 355</div>
+      <%= link_to "https://goo.gl/maps/bY7opyzrzSU2", target: "_blank", class: "contact__address" do %>
+        Woolands Business Park<br>
+        Rougham Industrial Estate<br>
+        Bury St. Edmunds, Suffolk,<br>
+        IP30 9ND
+      <% end %>
+
+      <ul class="social">
+        <li class="social__item">
+          <%= link_to inline_svg("linkedin.svg", class: "social__icon"), "https://www.linkedin.com/company/anson-timberworks-limited/" %>
+        </li>
+        <li class="social__item">
+          <%= link_to inline_svg("twitter.svg", class: "social__icon"), "https://twitter.com/ansontimber" %>
+        </li>
+        <li class="social__item">
+          <%= link_to inline_svg("facebook.svg", class: "social__icon"), "https://www.facebook.com/ansontimberworks" %>
+        </li>
+        <li class="social__item">
+          <%= link_to inline_svg("instagram.svg", class: "social__icon"), "https://www.instagram.com/ansontimberworks/" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="footer__copy">
+      2018 Anson Timberworks | <%= link_to "Privacy Policy", "#", class: "footer__link" %>
+    </p>
+  </div>
+</section>
