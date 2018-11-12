@@ -36,14 +36,17 @@
   }
 
   .navigation-mobile-menu {
-    color: $navigation-color;
     display: block;
     float: right;
     line-height: $navigation-height;
-    margin: 0;
+    margin: 5px 0 0 0;
     padding-right: $navigation-submenu-padding;
-    text-decoration: none;
-    text-transform: uppercase;
+
+    img {
+      height: 18px;
+      width: 22px;
+      vertical-align: initial;
+    }
 
     @include grid-media ($horizontal-bar-mode) {
       display: none;

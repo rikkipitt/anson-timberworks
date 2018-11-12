@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 43">
+  <defs>
+    <style>
+      .menu-i {
+        fill: none;
+        stroke: #896f87;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g>
+    <line class="menu-i" y1="2" x2="62" y2="2"/>
+    <line class="menu-i" y1="20.5" x2="62" y2="20.5"/>
+    <line class="menu-i" y1="40" x2="62" y2="40"/>
+  </g>
+</svg>
