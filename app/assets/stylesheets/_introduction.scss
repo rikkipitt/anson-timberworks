@@ -1,0 +1,16 @@
+.introduction {
+  @include grid-column(12);
+
+  @include grid-media($large-grid) {
+    @include grid-column(6);
+    @include grid-push(3);
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+}
