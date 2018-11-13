@@ -8,11 +8,21 @@
     </a>
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu">
-        <li class="nav-link"><%= link_to "Timberworks", root_path(anchor: "timberworks") %></li>
-        <li class="nav-link"><%= link_to "Passiveworks", root_path(anchor: "passiveworks") %></li>
-        <li class="nav-link"><%= link_to "Bespoke", root_path(anchor: "bespoke") %></li>
-        <li class="nav-link"><%= link_to "News", root_path(anchor: "news") %></li>
-        <li class="nav-link"><%= link_to "Contact", root_path(anchor: "contact") %></li>
+        <li class="nav-link" data-menuanchor="timberworks">
+          <%= link_to "Timberworks", root_path(anchor: "timberworks") %>
+        </li>
+        <li class="nav-link" data-menuanchor="passiveworks">
+          <%= link_to "Passiveworks", root_path(anchor: "passiveworks") %>
+        </li>
+        <li class="nav-link" data-menuanchor="bespoke">
+          <%= link_to "Bespoke", root_path(anchor: "bespoke") %>
+        </li>
+        <li class="nav-link" data-menuanchor="news">
+          <%= link_to "News", root_path(anchor: "news") %>
+        </li>
+        <li class="nav-link" data-menuanchor="contact">
+          <%= link_to "Contact", root_path(anchor: "contact") %>
+        </li>
       </ul>
     </nav>
   </div>

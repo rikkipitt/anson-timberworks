@@ -109,10 +109,17 @@
       outline: none;
       text-decoration: none;
 
-      &:focus,
       &:hover {
         color: $navigation-color-hover;
       }
+
+      &:focus {
+        color: $navigation-color;
+      }
+    }
+
+    &.active a {
+      color: $fringy-flower;
     }
 
     @include grid-media($horizontal-bar-mode) {

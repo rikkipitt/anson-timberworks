@@ -2,6 +2,105 @@
   <%= render "static/hero" %>
   <%= render "static/introduction" %>
   <%= render "static/team", team_members: @home.team_members %>
+  <section class="section">
+    <div class="grid">
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="modal">
+      <input class="modal__state" id="modal" type="checkbox" />
+      <div class="modal__overlay">
+        <div class="modal__inner">
+          <div class="modal__close" for="modal"></div>
+          <h1>Modal Title</h1>
+          <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
+          <p class="modal-content">Body text lorem ipsum dolor ipsum dolor sit sit possimus amet, consectetur adipisicing elit. Itaque, placeat, explicabo, veniam quos aperiam molestias eriam molestias molestiae suscipit ipsum enim quasi sit possimus quod atque nobis voluptas earum odit accusamus quibusdam. Body text lorem ipsum dolor ipsum dolor sit sit possimus amet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <%= render "static/process" %>
+  <section class="section">
+    <div class="grid">
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+    </div>
+  </section>
+  <%= render "static/quote" %>
+  <section class="section">
+    <div class="grid">
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+      <div class="grid__box">
+        <%= image_tag "//placehold.it/800x800", class: "grid__image" %>
+        <%= link_to "#", class: "grid__overlay" do %>
+          <%= content_tag :h4, "Project title" %>
+        <% end %>
+      </div>
+    </div>
+  </section>
   <%= render "instagram", instagram_images: @home.instagram_images %>
+  <%= render "static/blog" %>
   <%= render "static/contact" %>
 </div>
