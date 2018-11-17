@@ -1,5 +1,5 @@
 $ ->
-  $('#modal').on 'change', ->
+  $('[id^=modal]').on 'change', ->
     if $(this).is(':checked')
       $('body').addClass 'modal__open'
     else

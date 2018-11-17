@@ -4,7 +4,7 @@ $modal-close-color: $loulou;
 }
 
 .modal__open {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .modal__state {

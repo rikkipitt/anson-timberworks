@@ -1,4 +1,14 @@
 FactoryBot.define do
+  factory :project do
+    title { "MyString" }
+    image { "" }
+    copy { "MyText" }
+    category { nil }
+    published { false }
+  end
+  factory :category do
+    title { "MyString" }
+  end
   factory :team_member do
     name { "MyString" }
     position { "MyString" }

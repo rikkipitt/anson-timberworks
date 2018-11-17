@@ -1,0 +1,18 @@
+<section class="section">
+  <div class="grid">
+    <%= render projects %>
+  </div>
+
+  <div class="modal">
+    <input class="modal__state" id="modal-<%= modal_name %>" type="checkbox" />
+    <div class="modal__overlay">
+      <div class="modal__inner">
+        <div class="modal__close" for="modal-<%= modal_name %>"></div>
+
+        <div class="split-carousel">
+          <%= render partial: "projects/modal_project", collection: projects, as: :project %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

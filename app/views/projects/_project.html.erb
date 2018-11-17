@@ -1,0 +1,7 @@
+<div class="grid__box">
+  <%= image_tag project.image.url(:main), class: "grid__image" %>
+  <%= link_to "javascript:void(0);", class: "grid__overlay", data: { slide: project_counter } do %>
+    <%= content_tag :h4, project.title %>
+  <% end %>
+</div>
+
