@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="9.997" height="19.02002" viewBox="0 0 9.997 19.02002">
+  <defs>
+    <style>
+      .a {
+        fill: #9a9a9a;
+      }
+    </style>
+  </defs>
+  <title>arrow-left</title>
+  <path class="a" d="M1.5,9.5,10.012.76,9.269-.01.015,9.5l9.254,9.51.743-.76Z" transform="translate(-0.015 0.01001)"/>
+</svg>
