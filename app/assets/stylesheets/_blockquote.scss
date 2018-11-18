@@ -1,0 +1,41 @@
+blockquote {
+  @include grid-column(12);
+  color: #a0a0a0;
+  font-size: 1.5625em;
+  line-height: 1.4;
+  position: relative;
+  text-align: left;
+
+  @include grid-media($medium-grid) {
+    @include grid-column(8);
+    @include grid-push(2);
+    padding: 80px;
+  }
+
+  footer {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  cite {
+    font-style: normal;
+  }
+
+  &:after,
+  &:before {
+    display: block;
+    position: absolute;
+  }
+
+  &:after {
+    content: image-url("end-quote.svg");
+    bottom: 0;
+    right: 0;
+  }
+
+  &:before {
+    content: image-url("start-quote.svg");
+    top: 0;
+    left: 0;
+  }
+}

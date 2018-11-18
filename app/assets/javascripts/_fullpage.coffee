@@ -5,7 +5,7 @@ new fullpage("#main",
   paddingTop: '60px'
   scrollBar: true
   scrollingSpeed: 1000
-  verticalCentered: true
+  verticalCentered: false
   scrollOverflow: true
   responsiveHeight: 600
   responsiveWidth: 600

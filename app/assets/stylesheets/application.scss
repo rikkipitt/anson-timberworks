@@ -6,11 +6,13 @@
 @import "neat";
 
 @import "base/base";
+@import "fullpage.js/dist/fullpage.css";
 @import "slick/slick";
 @import "slick/slick-theme";
 
 @import "mixins/aspect-ratio";
 
+@import "blockquote";
 @import "carousel";
 @import "contact";
 @import "instagram";
