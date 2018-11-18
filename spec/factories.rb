@@ -1,4 +1,11 @@
 FactoryBot.define do
+  factory :blog do
+    title { "MyString" }
+    slug { "MyString" }
+    date { "MyString" }
+    copy { "MyText" }
+    published { false }
+  end
   factory :project do
     title { "MyString" }
     image { "" }
