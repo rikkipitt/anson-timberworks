@@ -3,7 +3,7 @@ class CreateBlogs < ActiveRecord::Migration[5.2]
     create_table :blogs do |t|
       t.string :title
       t.string :slug
-      t.string :date
+      t.date :date
       t.text :copy
       t.boolean :published, null: false, default: false
 

@@ -1,0 +1,5 @@
+<li class="blog__post" style="background-image: url(<%= blog.image.url(:main) %>)">
+  <%= link_to blog, class: "blog__link" do %>
+    <%= content_tag :h4, blog.title %>
+  <% end %>
+</li>

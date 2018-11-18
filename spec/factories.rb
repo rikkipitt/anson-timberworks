@@ -1,4 +1,12 @@
 FactoryBot.define do
+  factory :tagging do
+    taggable { nil }
+    tag { nil }
+  end
+  factory :tag do
+    title { "MyString" }
+    slug { "MyString" }
+  end
   factory :blog do
     title { "MyString" }
     slug { "MyString" }

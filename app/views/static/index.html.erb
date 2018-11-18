@@ -7,7 +7,6 @@
   <%= render "static/projects", projects: @home.passiveworks, modal_name: "passiveworks" %>
   <%= render "static/quote" %>
   <%= render "static/projects", projects: @home.bespoke, modal_name: "bespoke" %>
-  <%= render "instagram", instagram_images: @home.instagram_images %>
-  <%= render "static/blog" %>
+  <%= render "static/news", blogs: @home.blogs, instagram_images: @home.instagram_images %>
   <%= render "static/contact" %>
 </div>

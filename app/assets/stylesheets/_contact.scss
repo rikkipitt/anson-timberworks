@@ -1,6 +1,12 @@
 .contact {
   background: $loulou;
+  padding-bottom: 50px;
+  padding-top: 40px;
   text-align: center;
+
+  @include grid-media($medium-grid) {
+    padding: 0;
+  }
 }
 
 .contact__details {
@@ -9,17 +15,24 @@
 
 .contact__number {
   color: $fringy-flower;
-  font-size: 2.1875em;
-  line-height: 1.43;
+
+  @include grid-media($medium-grid) {
+    font-size: 2.1875em;
+    line-height: 1.43;
+  }
 }
 
 .contact__address {
   color: $eggplant;
   display: inline-block;
-  font-size: 2.1875em;
-  line-height: 1.43;
-  margin: 60px auto 40px;
+  margin: 30px auto;
   text-decoration: none;
+
+  @include grid-media($medium-grid) {
+    font-size: 2.1875em;
+    line-height: 1.43;
+    margin: 60px auto 40px;
+  }
 
   &:hover {
     color: $fringy-flower;
