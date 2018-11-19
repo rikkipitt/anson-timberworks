@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+@import "normalize.css/normalize";
+
+@import "bourbon";
+@import "neat";
+
+@import "base/base";
+
+.devise-sessions {
+  .main {
+    @include grid-container;
+  }
+
+  .login {
+    @include grid-column(4);
+    @include grid-shift(4);
+  }
+
+  .logo {
+    margin: 2em auto;
+    text-align: center;
+  }
+
+  img,
+  svg {
+    width: 150px;
+  }
+}
