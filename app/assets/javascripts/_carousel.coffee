@@ -20,15 +20,25 @@ $ ->
   # Process carousel
 
   $('.process-slider--for').slick
+    arrows: false
+    asNavFor: '.process-slider--nav'
     centerMode: true
+    fade: true
     slidesToShow: 1
     slidesToScroll: 1
-    arrows: false
-    fade: true
-    asNavFor: '.process-slider--nav'
   $('.process-slider--nav').slick
-    centerMode: true
-    slidesToShow: 7
-    slidesToScroll: 1
     asNavFor: '.process-slider--for'
+    arrows: true
+    centerMode: true
+    mobileFirst: true
+    slidesToShow: 1
+    slidesToScroll: 1
     focusOnSelect: true
+    responsive: [
+      {
+        breakpoint: 599
+        settings:
+          arrows: true
+          slidesToShow: 7
+      }
+    ]

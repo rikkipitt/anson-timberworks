@@ -6,6 +6,26 @@
   .slick-slide:last-child .process-slider__nav-item:after {
     display: none;
   }
+
+  .slick-prev {
+    margin-top: 30px;
+    left: 20px;
+
+    &:before {
+      content: image-url('arrow-left.svg');
+      opacity: 1;
+    }
+  }
+
+  .slick-next {
+    margin-top: 30px;
+    right: 20px;
+
+    &:before {
+      content: image-url('arrow-right.svg');
+      opacity: 1;
+    }
+  }
 }
 
 .process-slider--nav {
@@ -16,17 +36,19 @@
   position: relative;
   text-align: center;
 
-  &:after {
-    background-repeat: no-repeat;
-    background-size: 15px 10px;
-    background-image: image-url("arrow.svg");
-    content: "";
-    display: inline-block;
-    height: 10px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 15px;
+  @include grid-media($medium-grid) {
+    &:after {
+      background-repeat: no-repeat;
+      background-size: 15px 10px;
+      background-image: image-url("arrow.svg");
+      content: "";
+      display: inline-block;
+      height: 10px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 15px;
+    }
   }
 }
 
