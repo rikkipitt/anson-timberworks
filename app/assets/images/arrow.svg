@@ -1,10 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="268.83251" height="184.99973" viewBox="0 0 268.83251 184.99973">
+<svg id="259840b4-0c88-499d-9896-0131055b29c5" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="20.041" height="13.021" viewBox="0 0 20.041 13.021">
   <defs>
     <style>
-      .a {
+      .d7374426-e72d-4b2f-93da-8bd48f7adb68 {
         fill: #cdcdcd;
       }
     </style>
   </defs>
-  <path class="a" d="M265.171,125.577l-80-80a12.50023,12.50023,0,0,0-17.678,17.678l58.661,58.661H12.5a12.5,12.5,0,0,0,0,25H226.154l-58.659,58.661a12.50023,12.50023,0,0,0,17.678,17.678l79.998-80A12.49957,12.49957,0,0,0,265.171,125.577Z" transform="translate(0 -41.91625)"/>
+  <title>arrow</title>
+  <g id="4870869d-e277-444b-929b-ebfe70eedaa3" data-name="Artboard 1">
+    <path id="8d26b4a6-5cbc-49c8-a5e3-5ecd06991495" data-name="Arrow" class="d7374426-e72d-4b2f-93da-8bd48f7adb68" d="M52.311,46.292H33.959V44.329H52.311Zm-4.755,5.719-1.374-1.387L51.254,45.5l-5.071-5.123,1.374-1.387L54,45.5Z" transform="translate(-33.959 -38.99)"/>
+  </g>
 </svg>
