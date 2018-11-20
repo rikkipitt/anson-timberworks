@@ -4,7 +4,7 @@ class BlogsController < ApplicationController
   def index
     if params[:tag]
       @tag = Tag.friendly.find(params[:tag])
-      @blogs = @tag.blogs.published.paginate(page: params[:page])
+      @blogs = Blog.tagged_with(@tag.slug).published.paginate(page: params[:page])
     else
       @blogs = Blog.published.paginate(page: params[:page])
     end

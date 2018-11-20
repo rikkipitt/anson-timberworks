@@ -1,0 +1,19 @@
+.tags {
+  margin-bottom: 1em;
+  margin-top: 1em;
+
+  a {
+    cursor: pointer;
+    display: inline-block;
+    font-family: $base-font-family;
+    text-decoration: none;
+    user-select: none;
+
+    &.active,
+    &:hover,
+    &:focus {
+      color: $action-color;
+    }
+  }
+}
+

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   root to: "static#index"
   resources :blogs, only: [:index, :show], path: "blog"
+  get "tags/:tag", to: "blogs#index", as: :tag
 
   get "/blog/:year/:month/:slug", to: redirect("/blog/%{slug}")
 end

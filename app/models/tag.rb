@@ -5,6 +5,7 @@ class Tag < ApplicationRecord
   friendly_id :title, use: [:slugged]
 
   has_many :taggings, dependent: :destroy
+  has_many :blogs, through: :taggings, source: :taggable, source_type: "Blog"
 
   validates_presence_of :title
 
