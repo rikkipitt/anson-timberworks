@@ -1,4 +1,6 @@
 if defined?(WillPaginate)
+  WillPaginate.per_page = 12
+
   module WillPaginate
     module ActiveRecord
       module RelationMethods
@@ -6,6 +8,7 @@ if defined?(WillPaginate)
         def total_count() count end
       end
     end
+
     module CollectionMethods
       alias_method :num_pages, :total_pages
     end

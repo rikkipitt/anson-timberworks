@@ -1,35 +1,19 @@
-<p id="notice"><%= notice %></p>
+<section class="blog-section">
+  <div class="wrap">
+    <div class="panel__header">
+      <div class="panel__header-inner">
+        <h1 class="panel__header-title">
+          Blog News
+        </h1>
+      </div>
+    </div>
 
-<h1>Blogs</h1>
+    <div class="blog">
+      <ul class="blog__posts">
+        <%= render @blogs %>
+      </ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Slug</th>
-      <th>Date</th>
-      <th>Copy</th>
-      <th>Published</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @blogs.each do |blog| %>
-      <tr>
-        <td><%= blog.title %></td>
-        <td><%= blog.slug %></td>
-        <td><%= blog.date %></td>
-        <td><%= blog.copy %></td>
-        <td><%= blog.published %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path %>
+      <%= will_paginate @blogs %>
+    </div>
+  </div>
+</section>
