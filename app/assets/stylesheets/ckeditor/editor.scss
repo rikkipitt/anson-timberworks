@@ -1,0 +1,42 @@
+.cke_editable img {
+  max-width: 100% !important;
+}
+
+.cke_editable .slickcarousel {
+  margin: 18px auto !important;
+  outline: none !important;
+}
+
+.content-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.content-row__full-column {
+  border: 1px dashed #d1d1d1;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.content-row__half-column {
+  border: 1px dashed #d1d1d1;
+  padding: 0 10px;
+  width: 50%;
+
+  &:first-of-type {
+    margin-right: 20px;
+  }
+
+  &--pull-right {
+     margin-left: 50%;
+  }
+}
+.content-row__quarter-column {
+  border: 1px dashed #d1d1d1;
+  padding: 0 10px;
+  width: 25%;
+
+  &:first-of-type {
+    margin-right: 20px;
+  }
+}

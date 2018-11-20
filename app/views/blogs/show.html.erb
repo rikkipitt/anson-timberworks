@@ -1,29 +1,17 @@
-<p id="notice"><%= notice %></p>
+<section class="blog-section">
+  <div class="wrap">
+    <div class="panel__header">
+      <div class="panel__header-inner">
+        <h1 class="panel__header-title">
+          <%= @blog.title %>
+        </h1>
+      </div>
+    </div>
 
-<p>
-  <strong>Title:</strong>
-  <%= @blog.title %>
-</p>
+    <div class="blog">
+      <p>Posted on <%= @blog.date.strftime("%d %B %Y") %></p>
+      <%= raw @blog.copy %>
+    </div>
+  </div>
+</section>
 
-<p>
-  <strong>Slug:</strong>
-  <%= @blog.slug %>
-</p>
-
-<p>
-  <strong>Date:</strong>
-  <%= @blog.date %>
-</p>
-
-<p>
-  <strong>Copy:</strong>
-  <%= @blog.copy %>
-</p>
-
-<p>
-  <strong>Published:</strong>
-  <%= @blog.published %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
