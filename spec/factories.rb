@@ -1,4 +1,9 @@
 FactoryBot.define do
+  factory :home_page do
+    introduction { "" }
+    quote { "MyText" }
+    quote_citation { "MyString" }
+  end
   factory :tagging do
     taggable { nil }
     tag { nil }

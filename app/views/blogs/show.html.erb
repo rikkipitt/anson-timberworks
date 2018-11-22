@@ -1,5 +1,11 @@
 <section class="blog-section">
   <div class="wrap">
+    <div class="blog__header-navigation">
+      <div class="blog__header-navigation-inner">
+        <%= link_to "Back", blogs_path, class: "blog__back-button" %>
+      </div>
+    </div>
+
     <div class="panel__header">
       <div class="panel__header-inner">
         <h1 class="panel__header-title">
@@ -18,3 +24,11 @@
   </div>
 </section>
 
+<section>
+  <div class="wrap">
+    <div class="blog__navigation">
+      <%= link_to_if(@blog.previous, "Previous", @blog.previous, class: "blog__navigation-link blog__navigation-link--previous"){} %>
+      <%= link_to_if(@blog.next, "Next", @blog.next, class: "blog__navigation-link blog__navigation-link--next"){} %>
+    </div>
+  </div>
+</section>

@@ -1,5 +1,5 @@
 class Blog < ApplicationRecord
-  include Taggable
+  include OrderQuery, Taggable
   has_paper_trail
 
   extend FriendlyId
@@ -7,6 +7,8 @@ class Blog < ApplicationRecord
 
   default_scope { order(date: :desc) }
   scope :published, -> { where(published: true) }
+
+  order_query :order_date, [:date, :desc]
 
   has_attached_file :image, {
     styles: {thumb: "100x100>", main: "800x800#"},
@@ -29,5 +31,13 @@ class Blog < ApplicationRecord
 
   def self.tagged_with(slug)
     Tag.find_by_slug!(slug).blogs
+  end
+
+  def next
+    Blog.published.order_date_at(self).next(false)
+  end
+
+  def previous
+    Blog.published.order_date_at(self).previous(false)
   end
 end
