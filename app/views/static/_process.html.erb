@@ -9,58 +9,20 @@
     </div>
 
     <div class="process-slider process-slider--nav">
-      <div class="process-slider__nav-item">
-        <%= inline_svg "idea.svg", class: "process-slider__nav-icon" %>
-      </div>
-      <div class="process-slider__nav-item">
-        <%= inline_svg "call.svg", class: "process-slider__nav-icon" %>
-      </div>
-      <div class="process-slider__nav-item">
-        <%= inline_svg "drawings.svg", class: "process-slider__nav-icon" %>
-      </div>
-      <div class="process-slider__nav-item">
-        <%= inline_svg "build.svg", class: "process-slider__nav-icon" %>
-      </div>
-      <div class="process-slider__nav-item">
-        <%= inline_svg "date.svg", class: "process-slider__nav-icon" %>
-      </div>
-      <div class="process-slider__nav-item">
-        <%= inline_svg "handover.svg", class: "process-slider__nav-icon" %>
-      </div>
-      <div class="process-slider__nav-item">
-        <%= inline_svg "photography.svg", class: "process-slider__nav-icon" %>
-      </div>
+      <% our_processes.each do |step| %>
+        <div class="process-slider__nav-item">
+          <%= image_tag step.icon.url, class: "process-slider__nav-icon inline" %>
+        </div>
+      <% end %>
     </div>
 
     <div class="process-slider process-slider--for">
-      <div>
-        <h3>Title 1</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales accumsan urna. Mauris faucibus ex in congue pellentesque. Cras leo augue, vitae facilisis ligula feugiat ut. Donec ullamcorper tempor nisl id commodo. Quisque convallis quam justo, non tempus orci.</p>
-      </div>
-      <div>
-        <h3>Title 2</h3>
-        <p>Lorem ipsum dolor sit amet, elit. Fusce sodales accumsan urna. Mauris faucibus ex in congue pellentesque. Cras dignissim leo augue, vitae facilisis ligula feugiat ut. Donec ullamcorper tempor nisl id commodo. Quisque convallis quam justo, non tempus orci.</p>
-      </div>
-      <div>
-        <h3>Title 3</h3>
-        <p>Lorem dolor sit amet, adipiscing elit. Fusce sodales accumsan urna. Mauris faucibus ex in congue pellentesque. Cras dignissim leo augue, vitae facilisis ligula feugiat ut. Donec ullamcorper tempor nisl id commodo.</p>
-      </div>
-      <div>
-        <h3>Title 4</h3>
-        <p>Lorem ipsum dolor. Fusce sodales accumsan urna. Mauris faucibus ex in congue pellentesque. Donec ullamcorper tempor nisl id commodo. Quisque convallis quam justo, non tempus orci.</p>
-      </div>
-      <div>
-        <h3>Title 5</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </div>
-      <div>
-        <h3>Title 6</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales accumsan urna. Mauris faucibus ex in congue pellentesque. Donec isl id commodo. Quisque convallis quam justo, non tempus orci.</p>
-      </div>
-      <div>
-        <h3>Title 7</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales accumsan urna. Mauris faucibus ex in congue pellentesque. Cras dignissim leo augue, vitae facilisis ligula feugiat ut. Donec ullamcorper tempor nisl id commodo. Quisque convallis quam justo, non tempus orci.</p>
-      </div>
+      <% our_processes.each do |step| %>
+        <div>
+          <%= content_tag :h3, step.title %>
+          <%= raw step.copy %>
+        </div>
+      <% end %>
     </div>
   </div>
 </section>

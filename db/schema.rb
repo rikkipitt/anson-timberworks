@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_20_174931) do
+ActiveRecord::Schema.define(version: 2018_11_22_170158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -100,6 +100,24 @@ ActiveRecord::Schema.define(version: 2018_11_20_174931) do
     t.boolean "published"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "our_processes", force: :cascade do |t|
+    t.string "icon_file_name"
+    t.string "icon_content_type"
+    t.bigint "icon_file_size"
+    t.datetime "icon_updated_at"
+    t.string "title"
+    t.text "copy"
+    t.integer "parent_id"
+    t.integer "lft"
+    t.integer "rgt"
+    t.boolean "published"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["lft"], name: "index_our_processes_on_lft"
+    t.index ["parent_id"], name: "index_our_processes_on_parent_id"
+    t.index ["rgt"], name: "index_our_processes_on_rgt"
   end
 
   create_table "projects", force: :cascade do |t|

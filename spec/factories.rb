@@ -1,4 +1,13 @@
 FactoryBot.define do
+  factory :our_process do
+    icon { "" }
+    title { "MyString" }
+    copy { "MyText" }
+    parent_id { 1 }
+    lft { 1 }
+    rgt { 1 }
+    published { false }
+  end
   factory :home_page do
     introduction { "" }
     quote { "MyText" }

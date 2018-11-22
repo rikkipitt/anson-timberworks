@@ -8,6 +8,10 @@ fullpage.js@^3.0.3:
   dependencies:
     jquery "^3.3.1"
 
+inline-svg@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/inline-svg/-/inline-svg-2.2.3.tgz#284b9dfd4bde0048467ee3321472392647d4f208"
+
 jquery@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"

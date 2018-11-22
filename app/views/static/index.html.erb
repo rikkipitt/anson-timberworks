@@ -3,7 +3,7 @@
   <%= render "static/introduction", introduction: @home.copy.introduction %>
   <%= render "static/team", team_members: @home.team_members %>
   <%= render "static/projects", projects: @home.timberworks, modal_name: "timberworks" %>
-  <%= render "static/process" %>
+  <%= render "static/process", our_processes: @home.our_processes %>
   <%= render "static/projects", projects: @home.passiveworks, modal_name: "passiveworks" %>
   <%= render "static/quote", quote: @home.copy.quote, quote_citation: @home.copy.quote_citation %>
   <%= render "static/projects", projects: @home.bespoke, modal_name: "bespoke" %>

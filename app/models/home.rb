@@ -7,6 +7,10 @@ class Home
     @team_members ||= TeamMember.published
   end
 
+  def our_processes
+    @our_processes ||= OurProcess.published
+  end
+
   def timberworks
     @timberworks ||= Project.categorised_by("timberworks").published
   end

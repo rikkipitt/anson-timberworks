@@ -2,8 +2,10 @@
 //= require slick-carousel
 //= require scrolloverflow.min
 //= require fullpage.js/dist/fullpage
+//= require inline-svg/dist/inlineSVG.min
 //= require _carousel
 //= require _fullpage
+//= require _inline-svg
 //= require _modal
 //= require _navigation
 //= require _projects

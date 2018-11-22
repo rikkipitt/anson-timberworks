@@ -39,6 +39,6 @@ $ ->
         breakpoint: 599
         settings:
           arrows: true
-          slidesToShow: 7
+          slidesToShow: $('.process-slider__nav-item').length
       }
     ]
