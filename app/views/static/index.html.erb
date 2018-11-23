@@ -2,11 +2,11 @@
   <%= render "static/hero" %>
   <%= render "static/introduction", introduction: @home.copy.introduction %>
   <%= render "static/team", team_members: @home.team_members %>
-  <%= render "static/projects", projects: @home.timberworks, modal_name: "timberworks" %>
+  <%= render "static/projects", copy: @home.copy.timberworks, projects: @home.timberworks, modal_name: "timberworks" %>
   <%= render "static/process", our_processes: @home.our_processes %>
-  <%= render "static/projects", projects: @home.passiveworks, modal_name: "passiveworks" %>
+  <%= render "static/projects", copy: @home.copy.passiveworks, projects: @home.passiveworks, modal_name: "passiveworks" %>
   <%= render "static/quote", quote: @home.copy.quote, quote_citation: @home.copy.quote_citation %>
-  <%= render "static/projects", projects: @home.bespoke, modal_name: "bespoke" %>
+  <%= render "static/projects", copy: @home.copy.bespoke, projects: @home.bespoke, modal_name: "bespoke" %>
   <%= render "static/news", blogs: @home.blogs, instagram_images: @home.instagram_images %>
   <%= render "static/contact" %>
 </div>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_22_170158) do
+ActiveRecord::Schema.define(version: 2018_11_23_115320) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -85,6 +85,9 @@ ActiveRecord::Schema.define(version: 2018_11_22_170158) do
     t.string "quote_citation"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "timberworks"
+    t.text "passiveworks"
+    t.text "bespoke"
   end
 
   create_table "instagram_images", force: :cascade do |t|

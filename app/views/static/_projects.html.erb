@@ -3,6 +3,12 @@
     <%= render projects %>
   </div>
 
+  <% unless copy.blank? %>
+    <div class="project-copy">
+      <%= raw copy %>
+    </div>
+  <% end %>
+
   <div class="modal">
     <input class="modal__state" id="modal-<%= modal_name %>" type="checkbox" />
     <div class="modal__overlay">
