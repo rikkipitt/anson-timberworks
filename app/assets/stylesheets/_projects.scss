@@ -1,5 +1,6 @@
 .project-copy {
-  @include grid-column(12);
+  @include grid-column(11);
+  @include grid-push(0.5);
   padding: 80px 0 60px;
 
   @include grid-media($medium-grid) {

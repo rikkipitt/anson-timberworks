@@ -1,5 +1,6 @@
 .introduction {
-  @include grid-column(12);
+  @include grid-column(11);
+  @include grid-push(0.5);
 
   h2 {
     font-size: 2em;

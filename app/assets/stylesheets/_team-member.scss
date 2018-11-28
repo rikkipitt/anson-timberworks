@@ -1,5 +1,6 @@
 .team {
-  @include grid-column(12);
+  @include grid-column(11);
+  @include grid-push(0.5);
 
   @include grid-media($large-grid) {
     @include grid-column(10);
