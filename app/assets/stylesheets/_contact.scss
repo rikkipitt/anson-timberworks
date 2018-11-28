@@ -20,6 +20,14 @@
     font-size: 2.1875em;
     line-height: 1.43;
   }
+
+  a[href^="tel:"] {
+    color: $fringy-flower;
+
+    &:hover {
+      color: $fringy-flower;
+    }
+  }
 }
 
 .contact__address {
