@@ -13,6 +13,7 @@
   background-color: $navigation-background;
   min-height: $navigation-height;
   position: fixed;
+  text-align: center;
   top: 0;
   width: 100%;
   z-index: 9999;
@@ -21,12 +22,11 @@
 
   .mobile-logo {
     display: inline;
-    float: left;
     line-height: $navigation-height;
     padding-left: $navigation-padding;
 
     img {
-      height: 20px;
+      height: 25px;
       vertical-align: middle;
     }
 
@@ -98,7 +98,7 @@
     line-height: $navigation-height / 1.2;
     overflow: hidden;
     padding: 0 $navigation-submenu-padding;
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
     width: 100%;
     z-index: 9999;
