@@ -1,4 +1,12 @@
 FactoryBot.define do
+  factory :carousel_slide do
+    image { "" }
+    video { "" }
+    parent_id { 1 }
+    lft { 1 }
+    rgt { 1 }
+    published { false }
+  end
   factory :our_process do
     icon { "" }
     title { "MyString" }

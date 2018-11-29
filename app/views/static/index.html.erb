@@ -1,5 +1,5 @@
 <div id="main" class="main">
-  <%= render "static/hero" %>
+  <%= render "static/hero", carousel_slides: @home.carousel_slides %>
   <%= render "static/introduction", introduction: @home.copy.introduction %>
   <%= render "static/team", team_members: @home.team_members %>
   <%= render "static/projects", copy: @home.copy.timberworks, projects: @home.timberworks, modal_name: "timberworks" %>

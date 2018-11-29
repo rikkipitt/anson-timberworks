@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_23_115320) do
+ActiveRecord::Schema.define(version: 2018_11_29_104534) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,26 @@ ActiveRecord::Schema.define(version: 2018_11_23_115320) do
     t.bigint "image_file_size"
     t.datetime "image_updated_at"
     t.index ["slug"], name: "index_blogs_on_slug", unique: true
+  end
+
+  create_table "carousel_slides", force: :cascade do |t|
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.bigint "image_file_size"
+    t.datetime "image_updated_at"
+    t.string "video_file_name"
+    t.string "video_content_type"
+    t.bigint "video_file_size"
+    t.datetime "video_updated_at"
+    t.integer "parent_id"
+    t.integer "lft"
+    t.integer "rgt"
+    t.boolean "published", default: false, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["lft"], name: "index_carousel_slides_on_lft"
+    t.index ["parent_id"], name: "index_carousel_slides_on_parent_id"
+    t.index ["rgt"], name: "index_carousel_slides_on_rgt"
   end
 
   create_table "categories", force: :cascade do |t|

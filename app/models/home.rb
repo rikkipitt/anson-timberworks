@@ -1,4 +1,8 @@
 class Home
+  def carousel_slides
+    @carousel_slides = CarouselSlide.published
+  end
+
   def copy
     @copy ||= HomePage.first
   end
