@@ -1,4 +1,10 @@
 $ ->
+  $('#carousel').on 'init', ->
+    $('video').each ->
+      @play()
+      return
+    return
+
   $('#carousel').slick
     autoplay: true
     infinite: false

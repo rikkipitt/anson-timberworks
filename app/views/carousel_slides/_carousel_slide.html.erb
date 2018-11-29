@@ -1,5 +1,5 @@
 <% if carousel_slide.video.exists? %>
-  <div class="carousel__slide--video">
+  <div class="carousel__slide carousel__slide--video">
     <div class="video-container">
       <video playsinline autoplay muted loop>
         <source src="<%= video_path(carousel_slide.video.url) %>" type="video/mp4">
