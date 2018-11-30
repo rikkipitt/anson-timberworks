@@ -36,7 +36,7 @@ RailsAdmin.config do |config|
 
     nested_set do
       visible do
-        %w(CaseStudy CarouselSlide).include? bindings[:abstract_model].model_name
+        %w(CaseStudy CarouselSlide Project).include? bindings[:abstract_model].model_name
       end
     end
   end

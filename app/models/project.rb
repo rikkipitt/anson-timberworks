@@ -1,8 +1,10 @@
 class Project < ApplicationRecord
   has_paper_trail
+  acts_as_nested_set
 
   belongs_to :category
 
+  default_scope { order(lft: :asc) }
   scope :published, -> { where(published: true) }
 
   has_attached_file :image, {
