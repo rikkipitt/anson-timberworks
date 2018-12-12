@@ -1,4 +1,12 @@
 FactoryBot.define do
+  factory :legal_page do
+    title { "MyString" }
+    slug { "MyString" }
+    copy { "MyText" }
+    parent_id { 1 }
+    lft { 1 }
+    rgt { 1 }
+  end
   factory :picture do
     image { "" }
     project { nil }
