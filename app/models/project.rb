@@ -3,6 +3,7 @@ class Project < ApplicationRecord
   acts_as_nested_set
 
   belongs_to :category
+  has_many :pictures, inverse_of: :project, dependent: :destroy
 
   default_scope { order(lft: :asc) }
   scope :published, -> { where(published: true) }
@@ -21,7 +22,10 @@ class Project < ApplicationRecord
 
   rails_admin do
     field :title
-    field :image
+    field :image do
+      label "Main image"
+    end
+    field :pictures
     field :copy, :ck_editor
     field :category
     field :published

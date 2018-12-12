@@ -1,10 +1,7 @@
 $ ->
-  $('a[data-slide]').click (e) ->
+  $('a[data-modal]').click (e) ->
     e.preventDefault()
-    slide = $(this).data 'slide'
-    modal = $(this).parents('.section').find '.modal'
-    carousel = modal.find '.split-carousel'
+    modal = $(this).parents('.grid__box').find '.modal'
 
-    carousel.slick 'slickGoTo', slide, true
     modal.find('.modal__state').trigger 'click'
     return

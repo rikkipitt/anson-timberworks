@@ -1,7 +1,12 @@
 .split-carousel {
   @include grid-container;
-  @include grid-collapse;
   margin-bottom: 0;
+  width: 100%;
+
+  @include grid-media($medium-grid) {
+    @include grid-column(6);
+    margin-left: 0;
+  }
 
   .slick-prev,
   .slick-next {
@@ -40,14 +45,12 @@
 }
 
 .split-carousel__image {
-  @include grid-column(12);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vh;
 
   @include grid-media($medium-grid) {
-    @include grid-column(6);
     height: calc(100vh - 160px);
   }
 }

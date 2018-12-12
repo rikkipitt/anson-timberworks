@@ -1,9 +1,3 @@
 <div class="split-carousel__slide">
-  <div class="split-carousel__image" style="background-image: url(<%= project.image.url(:main) %>)"></div>
-  <div class="split-carousel__copy">
-    <div class="split-carousel__copy-inner">
-      <%= content_tag :h4, project.title %>
-      <%= raw project.copy %>
-    </div>
-  </div>
+  <div class="split-carousel__image" style="background-image: url(<%= picture.image.url(:main) %>)"></div>
 </div>

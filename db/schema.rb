@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_30_143107) do
+ActiveRecord::Schema.define(version: 2018_12_12_111040) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -143,6 +143,17 @@ ActiveRecord::Schema.define(version: 2018_11_30_143107) do
     t.index ["rgt"], name: "index_our_processes_on_rgt"
   end
 
+  create_table "pictures", force: :cascade do |t|
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.bigint "image_file_size"
+    t.datetime "image_updated_at"
+    t.bigint "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_pictures_on_project_id"
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string "title"
     t.string "image_file_name"
@@ -215,6 +226,7 @@ ActiveRecord::Schema.define(version: 2018_11_30_143107) do
     t.index ["item_type", "item_id"], name: "index_versions_on_item_type_and_item_id"
   end
 
+  add_foreign_key "pictures", "projects"
   add_foreign_key "projects", "categories"
   add_foreign_key "taggings", "tags"
 end

@@ -1,4 +1,8 @@
 FactoryBot.define do
+  factory :picture do
+    image { "" }
+    project { nil }
+  end
   factory :carousel_slide do
     image { "" }
     video { "" }

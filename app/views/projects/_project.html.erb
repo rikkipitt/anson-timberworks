@@ -1,7 +1,28 @@
 <div class="grid__box">
   <%= image_tag project.image.url(:main), class: "grid__image" %>
-  <%= link_to "javascript:void(0);", class: "grid__overlay", data: { slide: project_counter } do %>
+  <%= link_to "javascript:void(0);", class: "grid__overlay", data: { modal: project.id } do %>
     <%= content_tag :h4, project.title %>
   <% end %>
+
+  <div class="modal">
+    <input class="modal__state" id="modal-<%= project.id %>" type="checkbox" />
+    <div class="modal__overlay">
+      <div class="modal__inner">
+        <div class="modal__close" for="modal-<%= project.id %>"></div>
+
+        <div class="split-carousel">
+          <%= render partial: "projects/modal_project", locals: { picture: project } %>
+          <%= render partial: "projects/modal_project", collection: project.pictures, as: :picture %>
+        </div>
+
+        <div class="split-carousel__copy">
+          <div class="split-carousel__copy-inner">
+            <%= content_tag :h4, project.title %>
+            <%= raw project.copy %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
