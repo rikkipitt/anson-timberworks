@@ -1,0 +1,21 @@
+<section class="blog-section">
+  <div class="wrap">
+    <div class="blog__header-navigation">
+      <div class="blog__header-navigation-inner">
+        <%= link_to "Back", root_path, class: "blog__back-button" %>
+      </div>
+    </div>
+
+    <div class="panel__header">
+      <div class="panel__header-inner">
+        <h1 class="panel__header-title">
+          <%= @legal_page.title %>
+        </h1>
+      </div>
+    </div>
+
+    <div class="blog">
+      <%= raw @legal_page.copy %>
+    </div>
+  </div>
+</section>

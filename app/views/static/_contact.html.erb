@@ -29,7 +29,10 @@
 
   <div class="footer">
     <p class="footer__copy">
-    <%= Time.current.year %> Anson Timberworks | <%= link_to "Privacy Policy", "#", class: "footer__link" %>
+    <%= Time.current.year %> Anson Timberworks
+    <% cache @legal_pages do %>
+      <%= render @legal_pages %>
+    <% end %>
     </p>
   </div>
 </section>

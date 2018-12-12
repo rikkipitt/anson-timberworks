@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get "tags/:tag", to: "blogs#index", as: :tag
 
   get "/blog/:year/:month/:slug", to: redirect("/blog/%{slug}")
+  resources :legal_pages, only: :show, path: "legal"
 end
