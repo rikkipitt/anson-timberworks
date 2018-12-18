@@ -35,6 +35,10 @@ $modal-close-color: $loulou;
   overflow: auto;
   position: relative;
   transition: opacity 0.25s ease;
+
+  @include grid-media($medium-grid) {
+    overflow: hidden;
+  }
 }
 
 .modal__close {
