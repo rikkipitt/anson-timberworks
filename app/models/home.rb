@@ -28,10 +28,10 @@ class Home
   end
 
   def instagram_images
-    @instagram_images ||= InstagramImage.published.limit(3)
+    @instagram_images ||= InstagramImage.published.limit(5)
   end
 
   def blogs
-    @blogs ||= Blog.published.limit(3)
+    @blogs ||= Blog.published.limit(5)
   end
 end

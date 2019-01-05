@@ -13,7 +13,7 @@ $modal-close-color: $loulou;
 
 .modal__overlay {
   @include position(fixed, 0);
-  background-color: rgba(#fff, 0.7);
+  background-color: rgba(#fff, 0.8);
   opacity: 0;
   text-align: left;
   transition: opacity 0.25s ease;
