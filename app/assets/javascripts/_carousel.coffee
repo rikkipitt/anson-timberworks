@@ -15,7 +15,7 @@ $ ->
 
   $('#carousel .slick-dots li button').html('')
 
-  $('.split-carousel').slick
+  $('.modal-carousel').slick
     autoplay: false
     infinite: true
     slidesToShow: 1

@@ -1,10 +1,9 @@
-.split-carousel {
+.modal-carousel {
   @include grid-container;
   margin-bottom: 0;
   width: 100%;
 
   @include grid-media($medium-grid) {
-    @include grid-column(6);
     margin-left: 0;
   }
 
@@ -40,29 +39,32 @@
   }
 }
 
-.split-carousel__slide {
+.modal-carousel__slide {
   height: 100%;
 }
 
-.split-carousel__image {
+.modal-carousel__image {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40vh;
-
-  @include grid-media($medium-grid) {
-    height: calc(100vh - 160px);
-  }
+  height: calc(100vh - 160px);
 }
 
-.split-carousel__copy {
+.modal-carousel__copy {
   @include grid-column(12);
-  height: 100%;
+  height: calc(100vh - 160px);
   overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h4 {
+    text-align: center;
+  }
 
   @include grid-media($medium-grid) {
-    @include grid-column(6);
-
+    @include grid-column(10);
+    @include grid-push(1);
 
     h4 {
       font-size: 2.1875em;
@@ -76,8 +78,8 @@
   }
 }
 
-.split-carousel__copy-inner {
-  padding: 20px;
+.modal-carousel__copy-inner {
+  padding: 20px 10px;
 
   @include grid-media($medium-grid) {
     padding: 60px 40px 20px;

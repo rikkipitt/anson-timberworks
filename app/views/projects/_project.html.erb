@@ -10,16 +10,8 @@
       <div class="modal__inner">
         <div class="modal__close" for="modal-<%= project.id %>"></div>
 
-        <div class="split-carousel">
-          <%= render partial: "projects/modal_project", locals: { picture: project } %>
-          <%= render partial: "projects/modal_project", collection: project.pictures, as: :picture %>
-        </div>
-
-        <div class="split-carousel__copy">
-          <div class="split-carousel__copy-inner">
-            <%= content_tag :h4, project.title %>
-            <%= raw project.copy %>
-          </div>
+        <div class="modal-carousel">
+          <%= render partial: "projects/modal_project", collection: project.project_slides, as: :project_slide %>
         </div>
       </div>
     </div>

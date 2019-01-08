@@ -1,3 +1,11 @@
-<div class="split-carousel__slide">
-  <div class="split-carousel__image" style="background-image: url(<%= picture.image.url(:main) %>)"></div>
+<div class="modal-carousel__slide">
+  <% if project_slide.image.exists? %>
+    <div class="modal-carousel__image" style="background-image: url(<%= project_slide.image.url(:main) %>)"></div>
+  <% else %>
+    <div class="modal-carousel__copy">
+      <div class="modal-carousel__copy-inner">
+        <%= raw project_slide.copy %>
+      </div>
+    </div>
+  <% end %>
 </div>
