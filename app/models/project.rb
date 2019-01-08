@@ -15,7 +15,7 @@ class Project < ApplicationRecord
 
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
-  validates_presence_of :title, :image, :copy, :category
+  validates_presence_of :title, :image, :category
 
   def self.categorised_by(slug)
     Category.find_by_slug!(slug).projects
