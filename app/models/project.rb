@@ -26,8 +26,8 @@ class Project < ApplicationRecord
     field :image do
       label "Main image"
     end
-    field :pictures
-    field :copy, :ck_editor
+    # field :pictures
+    # field :copy, :ck_editor
     field :project_slides do
       associated_collection_cache_all true
       orderable true
