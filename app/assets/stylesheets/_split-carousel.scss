@@ -17,7 +17,7 @@
     left: 10px;
 
     @include grid-media($medium-grid) {
-      left: 20px;
+      left: 30px;
     }
 
     &:before {
@@ -30,7 +30,7 @@
     right: 10px;
 
     @include grid-media($medium-grid) {
-      right: 20px;
+      right: 30px;
     }
 
     &:before {

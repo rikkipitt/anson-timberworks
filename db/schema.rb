@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_12_115032) do
+ActiveRecord::Schema.define(version: 2019_01_08_114506) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -169,6 +169,19 @@ ActiveRecord::Schema.define(version: 2018_12_12_115032) do
     t.index ["project_id"], name: "index_pictures_on_project_id"
   end
 
+  create_table "project_slides", force: :cascade do |t|
+    t.string "image_file_name"
+    t.string "image_content_type"
+    t.bigint "image_file_size"
+    t.datetime "image_updated_at"
+    t.text "copy"
+    t.integer "position"
+    t.bigint "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["project_id"], name: "index_project_slides_on_project_id"
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string "title"
     t.string "image_file_name"
@@ -242,6 +255,7 @@ ActiveRecord::Schema.define(version: 2018_12_12_115032) do
   end
 
   add_foreign_key "pictures", "projects"
+  add_foreign_key "project_slides", "projects"
   add_foreign_key "projects", "categories"
   add_foreign_key "taggings", "tags"
 end

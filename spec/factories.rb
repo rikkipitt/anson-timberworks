@@ -1,4 +1,10 @@
 FactoryBot.define do
+  factory :project_slide do
+    image { "" }
+    copy { "MyText" }
+    position { 1 }
+    project { nil }
+  end
   factory :legal_page do
     title { "MyString" }
     slug { "MyString" }
