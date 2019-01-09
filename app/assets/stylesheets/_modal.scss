@@ -1,6 +1,7 @@
 $modal-close-color: $loulou;
 
 .modal {
+  box-shadow: 0px 0px 43.24px 2.76px rgba(0, 0, 28, 0.2);
 }
 
 .modal__open {
@@ -42,7 +43,7 @@ $modal-close-color: $loulou;
 }
 
 .modal__close {
-  @include position(fixed, 1em null null 1em);
+  @include position(fixed, 1em 1em null null);
   @include size(1.5em);
   cursor: pointer;
 
