@@ -17,8 +17,8 @@
   color: $fringy-flower;
 
   @include grid-media($medium-grid) {
-    font-size: 2.1875em;
-    line-height: 1.43;
+    font-size: 1.5625em;
+    line-height: 1.3;
   }
 
   a[href^="tel:"] {
@@ -37,8 +37,8 @@
   text-decoration: none;
 
   @include grid-media($medium-grid) {
-    font-size: 2.1875em;
-    line-height: 1.43;
+    font-size: 1.5625em;
+    line-height: 1.3;
     margin: 60px auto 40px;
   }
 

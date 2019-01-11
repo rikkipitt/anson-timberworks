@@ -7,13 +7,18 @@
     @include grid-column(10);
     @include grid-push(1);
 
-    p,
-    h3 {
-      font-size: 1.5625em;
-      line-height: 1.4;
+    p {
+      font-size: 1.3125em;
+      line-height: 1.43;
     }
 
-    h3 {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: 1.3125em;
+      line-height: 1.33;
       text-align: center;
     }
   }
