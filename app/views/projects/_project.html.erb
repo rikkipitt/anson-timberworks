@@ -4,17 +4,18 @@
     <%= content_tag :h4, project.title %>
   <% end %>
 
-  <div class="modal">
-    <input class="modal__state" id="modal-<%= project.id %>" type="checkbox" />
-    <div class="modal__overlay">
-      <div class="modal__inner">
-        <div class="modal__close" for="modal-<%= project.id %>"></div>
+  <% if project.project_slides.any? %>
+    <div class="modal">
+      <input class="modal__state" id="modal-<%= project.id %>" type="checkbox" />
+      <div class="modal__overlay">
+        <div class="modal__inner">
+          <div class="modal__close" for="modal-<%= project.id %>"></div>
 
-        <div class="modal-carousel">
-          <%= render partial: "projects/modal_project", collection: project.project_slides, as: :project_slide %>
+          <div class="modal-carousel">
+            <%= render partial: "projects/modal_project", collection: project.project_slides, as: :project_slide %>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  <% end %>
 </div>
-
