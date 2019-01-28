@@ -6,8 +6,7 @@ $ ->
     return
 
   $('#carousel').slick
-    autoplay: true
-    infinite: false
+    autoplay: false
     slidesToShow: 1
     slidesToScroll: 1
     arrows: false
@@ -45,6 +44,10 @@ $ ->
         breakpoint: 599
         settings:
           arrows: true
+      }
+      {
+        breakpoint: 800
+        settings:
           slidesToShow: $('.process-slider__nav-item').length
       }
     ]

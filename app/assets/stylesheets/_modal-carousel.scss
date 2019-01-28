@@ -42,6 +42,7 @@
 }
 
 .modal-carousel__slide {
+  background-color: #fff;
   height: 100%;
 }
 
@@ -50,6 +51,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 160px);
+  margin-left: 1px;
 }
 
 .modal-carousel__copy {
@@ -65,9 +67,6 @@
   }
 
   @include grid-media($medium-grid) {
-    @include grid-column(10);
-    @include grid-push(1);
-
     h4 {
       font-size: 1.5625em;
       line-height: 1;
@@ -84,6 +83,7 @@
   padding: 20px 10px;
 
   @include grid-media($medium-grid) {
+    max-width: 700px;
     padding: 60px 40px 20px;
   }
 }

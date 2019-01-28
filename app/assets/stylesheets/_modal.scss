@@ -34,7 +34,6 @@ $modal-close-color: $loulou;
 .modal__inner {
   @include grid-column(10);
   @include grid-push(1);
-  background-color: #fff;
   height: calc(100vh - 160px);
   margin-top: 80px;
   overflow: auto;

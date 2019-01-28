@@ -1,4 +1,9 @@
 .process-slider {
+  @include grid-media($large-grid) {
+    @include grid-column(10);
+    @include grid-push(1);
+  }
+
   .slick-current path {
     fill: #41183e;
   }
@@ -76,8 +81,8 @@
 
     p,
     h3 {
-      font-size: 1.5625em;
-      line-height: 1.4;
+      font-size: 1.3125em;
+      line-height: 1.43;
     }
 
     h3 {
