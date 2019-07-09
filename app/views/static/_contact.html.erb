@@ -12,16 +12,16 @@
 
       <ul class="social">
         <li class="social__item">
-          <%= link_to inline_svg("linkedin.svg", class: "social__icon"), "https://www.linkedin.com/company/anson-timberworks-limited/" %>
+          <%= link_to inline_svg("linkedin.svg", class: "social__icon"), "https://www.linkedin.com/company/anson-timberworks-limited/", target: "_blank" %>
         </li>
         <li class="social__item">
-          <%= link_to inline_svg("twitter.svg", class: "social__icon"), "https://twitter.com/ansontimber" %>
+          <%= link_to inline_svg("twitter.svg", class: "social__icon"), "https://twitter.com/ansontimber", target: "_blank" %>
         </li>
         <li class="social__item">
-          <%= link_to inline_svg("facebook.svg", class: "social__icon"), "https://www.facebook.com/ansontimberworks" %>
+          <%= link_to inline_svg("facebook.svg", class: "social__icon"), "https://www.facebook.com/ansontimberworks", target: "_blank" %>
         </li>
         <li class="social__item">
-          <%= link_to inline_svg("instagram.svg", class: "social__icon"), "https://www.instagram.com/ansontimberworks/" %>
+          <%= link_to inline_svg("instagram.svg", class: "social__icon"), "https://www.instagram.com/ansontimberworks/", target: "_blank" %>
         </li>
       </ul>
     </div>
@@ -29,7 +29,7 @@
 
   <div class="footer">
     <p class="footer__copy">
-    <%= Time.current.year %> Anson Timberworks
+    &copy; <%= Time.current.year %> Anson Timberworks
     <% cache @legal_pages do %>
       <%= render @legal_pages %>
     <% end %>
