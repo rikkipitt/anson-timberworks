@@ -3,6 +3,9 @@
     <div class="contact__details">
       <div class="contact__number">Office +44 1359 271 546</div>
       <div class="contact__number">Mobile +44 7545 839 355</div>
+      <%= mail_to "paul@ansontimberworks.co.uk", "paul@ansontimberworks.co.uk", class: "contact__email contact__email--margin-top" %>
+      <%= mail_to "info@ansontimberworks.co.uk", "info@ansontimberworks.co.uk", class: "contact__email" %>
+
       <%= link_to "https://goo.gl/maps/bY7opyzrzSU2", target: "_blank", class: "contact__address" do %>
         Woolands Business Park<br>
         Rougham Industrial Estate<br>

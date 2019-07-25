@@ -13,6 +13,24 @@
   @include grid-column(12);
 }
 
+.contact__email {
+  color: $fringy-flower;
+  display: block;
+
+  @include grid-media($medium-grid) {
+    font-size: 1.5625em;
+    line-height: 1.3;
+  }
+
+  &:hover {
+    color: $eggplant;
+  }
+
+  &--margin-top {
+    margin-top: 30px;
+  }
+}
+
 .contact__number {
   color: $fringy-flower;
 
